@@ -2,7 +2,7 @@ package twilio
 
 import "context"
 
-type Services struct {
+type Client struct {
 	Account struct {
 		Accounts AccountsService
 	}

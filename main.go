@@ -29,7 +29,7 @@ func run() error {
 	}
 	sort.Strings(keys)
 	//egFnames := map[string]string{}
-	fmt.Printf("type Services struct {\n")
+	fmt.Printf("type Client struct {\n")
 	for _, k := range keys {
 		fmt.Printf("	%s struct {\n", ToGo(k))
 		mounts := topLevel[k].(map[string]interface{})["mounts"].(map[string]interface{})
